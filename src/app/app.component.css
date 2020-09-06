@@ -1,0 +1,66 @@
+.window {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-color: #262c35;
+    overflow: hidden;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 32px;
+    background-color: #595c67;
+    overflow: hidden;
+    -webkit-app-region: drag;
+  }
+  
+  .navbar .header {
+    position: absolute;
+    top: 0; bottom: 0; left: 10px; right: 138px;
+    line-height: 32px;
+    font-family: "Segoe UI";
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff;
+  }
+  
+  .navbar .button {
+    -webkit-app-region: no-drag;
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+    width: 46px;
+    height: 32px;
+  }
+  .navbar .button:hover {
+    background-color: #6e7280;
+    color: #fff;
+  }
+  .navbar .button#close:hover {
+    background-color: #e74d5a;
+    color: #fff;
+  }
+  
+  .body {
+    position: absolute;
+    top: 32px; bottom: 0; left: 0; right: 0;
+    overflow: hidden;
+  }
+  
+  
+  .main {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    color: #ffffff;
+  }
+  
+  .content {
+    position: absolute;
+    top: 0; bottom: 0; left: 48px; right: 0;
+    border-left: 2px solid #1c2026;
+  }
+  

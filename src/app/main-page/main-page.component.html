@@ -1,0 +1,31 @@
+<div class="main">
+    <div class="option">
+        <span>Параметры подключения</span>
+        <div class="group">
+            <input class="input wide"  [disabled]="data.status.connected" placeholder="192.168.1.200" type="text" spellcheck="false" [(ngModel)]="data.ipconfig.ip"
+            (ngModelChange)="onChanges($event)" />
+            <input class="input wide" [disabled]="data.status.connected" placeholder="8000" type="text" spellcheck="false" [(ngModel)]="data.ipconfig.port"
+            (ngModelChange)="onChanges($event)" />
+            <div class="btn blue" *ngIf="!data.status.connected" (click)="connectToController()"> Подключиться</div>
+            <div class="btn red" *ngIf="data.status.connected" (click)="disconnectFromController()"> Отключиться</div>
+        </div>
+        
+    </div>
+    <div class="option">
+        <span>Отправить команду</span>
+        <div class="group">
+            <input class="input" type="text" spellcheck="false" [(ngModel)]="cmd"
+            (ngModelChange)="onChanges($event)" />
+            <div class="btn blue" (click)="sendToController()">Отправить</div>
+        </div>   
+    </div>
+
+    <div class="option">
+        <span>Консоль (только для чтения)</span>
+        <textarea rows="15" class="input wide" spellcheck="false" [ngModel]="data.console" readonly></textarea>
+      
+    </div>
+
+    <div class="btn read" (click)="clearConsole()">Очистить консоль</div>
+    
+</div>

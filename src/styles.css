@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    -webkit-user-select: none;
+    font-family: 'Montserrat' !important;
+    font-weight: 300;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    box-shadow: inset 0 0 10px 10px #595c67;
+    border: solid 4px transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    box-shadow: inset 0 0 10px 10px #aaa;
+    border: solid 4px transparent;
+  }
+  
